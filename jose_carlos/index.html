@@ -1,0 +1,223 @@
+<html>
+<style>
+#imagem_pessoal {
+border-radius: 50%;
+left: 50%;
+right: 50%;
+top: 150px;
+position: absolute;
+transform: translate(-50%,-50%);
+box-shadow: 1px 1px 2px 1px;
+}
+
+#imagem_pessoal:hover {
+border-radius: 50%;
+left: 50%;
+right: 50%;
+top: 150px;
+position: absolute;
+transform: translate(-50%,-50%);
+box-shadow: 1px 1px 5px 2px;
+border-style: solid;
+border-width: 3px;
+border-color: rgba(0,0,0,0.2);
+}
+
+body {
+background-color: rgba(0,0,0,0.001);
+
+}
+
+#nome {
+
+font-size: 50px;
+font-family: Arial;
+position: absolute;
+left: 50%;
+right: 50%;
+top: 300px;
+width: 400px;
+transform: translate(-33%,-40%);
+color: rgba(0,0,0,0.8);
+}
+
+#cont1{
+width: 450px;
+height: 300px;
+left: 50%;
+right: 50%;
+transform: translate(-50%,-50%);
+position: absolute;
+top: 500px;
+background-color: rgba(0,0,0,0.05);
+border-radius: 40px;
+box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1);
+}
+
+#cont1_interno{
+width: 450px;
+height: 50px;
+left: 0px;
+top: 0px;
+background-color: rgba(0,0,0,0.1);
+border-radius: 40px 40px 0px 0px;
+position: absolute;
+}
+
+#cont2{
+width: 450px;
+height: 300px;
+left: 18%;
+right: 50%;
+transform: translate(-50%,-50%);
+position: absolute;
+top: 500px;
+background-color: rgba(0,0,0,0.05);
+border-radius: 40px;
+box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1);
+}
+
+#cont2_interno{
+width: 450px;
+height: 50px;
+left: 0px;
+top: 0px;
+background-color: rgba(0,0,0,0.1);
+border-radius: 40px 40px 0px 0px;
+position: absolute;
+}
+
+
+#cont3{
+width: 450px;
+height: 300px;
+left: 82%;
+right: 50%;
+transform: translate(-50%,-50%);
+position: absolute;
+top: 500px;
+background-color: rgba(0,0,0,0.05);
+border-radius: 40px;
+box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1);
+}
+
+#cont3_interno{
+width: 450px;
+height: 50px;
+left: 0px;
+top: 0px;
+background-color: rgba(0,0,0,0.1);
+border-radius: 40px 40px 0px 0px;
+position: absolute;
+}
+
+#cont4{
+width: 1050px;
+height: 1000px;
+left: 18%;
+position: absolute;
+top: 700px;
+background-color: rgba(0,0,0,0.05);
+border-radius: 40px;
+box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1);
+}
+
+#cont4_interno{
+width: 1050px;
+height: 50px;
+left: 0px;
+top: 0px;
+background-color: rgba(0,0,0,0.1);
+border-radius: 40px 40px 0px 0px;
+position: absolute;
+}
+
+.titulo{
+
+left: 30px;
+top: -22px;
+position: absolute;
+font-size: 30px;
+font-family: verdana;
+}
+
+#audio{
+left: 50%;
+top: 50%;
+position: absolute;
+transform: translate(-50%,-50%);
+width: 450px;
+height: 100px;
+}
+
+#video{
+left: 50%;
+top: 60%;
+position: absolute;
+transform: translate(-50%,-50%);
+width: 450px;
+height: 250px;
+}
+
+#youtube{
+left: 50%;
+top: 60%;
+position: absolute;
+transform: translate(-50%,-50%);
+width: 450px;
+height: 250px;
+}
+
+#pdf{
+left: 0px;
+top: 50px;
+position: absolute;
+width: 1050px;
+height: 1000px;
+}
+</style>
+
+<body>
+<img id = "imagem_pessoal"  src="https://media.licdn.com/dms/image/C4D03AQEh7MFHNQbe_Q/profile-displayphoto-shrink_800_800/0/1653775465389?e=2147483647&v=beta&t=rxHTpmOqe9Jqmd6PFA0Kqe8L2crEP0m29wDiSXCRTwI" width="200" height="200">
+<b id="nome">José Carlos</b>
+
+<div id="cont1"><div id="cont1_interno"><p class="titulo">VÍDEO</p></div>
+
+<video controls id="video">
+  <source src="video.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+
+
+<div id="cont2"><div id="cont2_interno"><p class="titulo">ÁUDIO</p></div>
+
+<audio controls id="audio">
+  <source src="audio.ogg" type="audio/ogg">
+
+</audio>
+
+</div>
+<div id="cont3"><div id="cont3_interno"><p class="titulo">YOUTUBE</p></div>
+
+<iframe id="youtube"
+src="https://www.youtube.com/embed/x-brzoUK82g">
+</iframe>
+
+</div>
+
+
+
+
+<div id="cont4"><div id="cont4_interno"><p class="titulo">PDF</p></div>
+<object id="pdf" data="https://bitcoin.org/bitcoin.pdf" width="300" height="200"></object>
+
+
+</div>
+
+
+
+</body>
+</html>
